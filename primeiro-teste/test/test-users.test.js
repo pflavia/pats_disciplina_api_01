@@ -1,21 +1,25 @@
 const require = require('supertest');
+const funcoesGenerais = require('../suporte/funcoesGenerais');
+const jsonUsuarios = require('../fixtures/json_usuarios');
 const app = require('../app');
+const { json_arquivo_cadastro_usuario } = require('../fixture/json_usuarios');
 const rota = "http://localhost:3000/";
 const rotaUsers = "http://localhost:3000/users";
 
 describe('Suite de testes da api users...', () => {
 
-    const json_arquivo_cadastro_usuario = {
+    const json_local_arquivo_cadastro_usuario = {
         nome: "Flávia Novo 2",
         telefone: "(51) 99988-5522",
         email: "flaviNovo2@gmail.com",
         senha: "1234"
     }
-    const json_arquivo_sem_conteudo = {
+    const json_local_arquivo_sem_conteudo = {
 
     }
 
     it('Consulta todos os usuários... deve retornar status 200', async () => {
+        funcoesGenerais.teste1();
         const response = await require(rota)
             .get('/users');
         expect(response.status).toBe(200);
