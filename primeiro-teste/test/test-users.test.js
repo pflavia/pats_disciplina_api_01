@@ -44,7 +44,7 @@ describe('Suite de testes da api users...', () => {
             .post('/users')
             .send(json_arquivo_cadastro_usuario);
         expect(response.status).toBe(422);
-        expect(response.status).conts("{     "error": "E-mail já está em uso"}");
+        expect(response.status).contains("E-mail já está em uso");
         console.log(response.body);
     });
 });
