@@ -17,21 +17,26 @@ describe('Suite de testes da api users...', () => {
     };
     let idUsuario;
 
-    it('beforeAll',async () => {
-                    let idParaDeletar = 15;
+    it('beforeAll', async () => {
+        let idParaDeletar = 15;
         const responseConsulta = await request(rota)
             .get('/users');
-                            let response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            });
+
+        if (responseConsulta.body.id !== null) {
+            console.log('valor do id para deletar', responseConsulta.body.id);
+            //idParaDeletar= responseConsulta.body.id;
+            let response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+        }
+    });
 
     it('Consulta todos os usuários... deve retornar status 200', async () => {
         const response = await request(rota)
