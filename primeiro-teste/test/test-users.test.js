@@ -18,7 +18,7 @@ describe('Suite de testes da api users...', () => {
 
     }
 
-    it('Consulta todos os usuários... deve retornar status 200', async () => {
+    it.only('Consulta todos os usuários... deve retornar status 200', async () => {
         funcoesGenerais.teste1();
         const response = await require(rota)
             .get('/users');
@@ -33,7 +33,7 @@ describe('Suite de testes da api users...', () => {
         console.log(response.body);
     });
 
-//it.only para executar apenas um teste
+    //it.only para executar apenas um teste
     it('Deve cadastrar um novo usuário e deve retornar status 200', async () => {
         const response = await require(rota)
             .post('/users')
