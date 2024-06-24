@@ -1,10 +1,10 @@
 {
     "name": "primeiro-teste",
     "version": "1.0.0",
-    "description": "Primeiro Teste API",
+    "description": "Primeiro Teste",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
     },
     "author": "Flavia",
     "Keywords": [
@@ -13,7 +13,6 @@
     "license": "ISC",
     "dependencies": {
         "jest": "^29.7.0",
-        "jest-stare": "^2.5.1",
         "supertest": "^7.0.0"
     }
 }

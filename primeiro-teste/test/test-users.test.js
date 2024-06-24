@@ -1,54 +1,91 @@
-const require = require('supertest');
-const funcoesGenerais = require('../suporte/funcoesGenerais');
-const jsonUsuarios = require('../fixtures/json_usuarios');
-const app = require('../app');
-const { json_arquivo_cadastro_usuario } = require('../fixture/json_usuarios');
-const rota = "http://localhost:3000/";
+const request = require("supertest");
+const funcoesGenericas = require("../suporte/funcoes_genericas");
+const jsonUsuario = require("../fixture/json_usuarios");
+const json_arquivo_cadastro_usuario_dois = require("../fixture/json_usuarios");
+const json_arquivo_sem_conteudo = require("../fixture/json_usuarios");
+const { beforeEach } = require("node:test");
+const rota = "http://localhost:3000";
 const rotaUsers = "http://localhost:3000/users";
 
 describe('Suite de testes da api users...', () => {
 
-    const json_local_arquivo_cadastro_usuario = {
-        nome: "Flávia Novo 2",
-        telefone: "(51) 99988-5522",
-        email: "flaviNovo2@gmail.com",
-        senha: "1234"
-    }
-    const json_local_arquivo_sem_conteudo = {
+    const json_arquivo_cadastro_usuario_tres = {
+        nome: "Flávia",
+        telefone: "51997056160",
+        email: "fladdvigmail.com",
+        senha: "1234",
+    };
+    let idUsuario;
 
-    }
+    it('beforeAll',async () => {
+                    let idParaDeletar = 15;
+        const responseConsulta = await request(rota)
+            .get('/users');
+                            let response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+                            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+            });
 
-    it.only('Consulta todos os usuários... deve retornar status 200', async () => {
-        funcoesGenerais.teste1();
-        const response = await require(rota)
+    it('Consulta todos os usuários... deve retornar status 200', async () => {
+        const response = await request(rota)
             .get('/users');
         expect(response.status).toBe(200);
         console.log(response.body);
     });
 
-    it('Consulta todos os usuários... deve retornar status 200', async () => {
-        const response = await require(rota)
+    it('Consulta todos as atividades... deve retornar status 200', async () => {
+        const response = await request(rota)
             .get('/activities');
         expect(response.status).toBe(200);
         console.log(response.body);
     });
 
     //it.only para executar apenas um teste
-    it('Deve cadastrar um novo usuário e deve retornar status 200', async () => {
-        const response = await require(rota)
+    it('Deve cadastrar um novo usuário e deve retornar status 201', async () => {
+        const response = await request(rota)
             .post('/users')
-            .send(json_arquivo_cadastro_usuario);
-        expect(response.status).toBe(200);
-        expect(response.status).EqualTo(json_arquivo_cadastro_usuario);
+            .send(jsonUsuario.json_arquivo_cadastro_usuario);
+        console.log(response.body);
+        expect(response.body).toHaveProperty("id");
+        idUsuario = response.body.id;
+        console.log("Usuário cadastradfo: ", idUsuario);
+        expect(response.status).toBe(201);
         console.log(response.body);
     });
 
     it('Tentativa de cadastrar um novo usuário com e-mail que já existe... de deve retornar messagem de erro', async () => {
-        const response = await require(rota)
+        const response = await request(rota)
             .post('/users')
-            .send(json_arquivo_cadastro_usuario);
+            .send(jsonUsuario.json_arquivo_cadastro_usuario);
+        //   expect(response.body).toBedefined();
         expect(response.status).toBe(422);
-        expect(response.status).contains("E-mail já está em uso");
+        //  expect(response.status).contains("E-mail já está em uso");
+        console.log(response.status);
         console.log(response.body);
+    });
+
+    it('Criação de usuário com dados inválidos, deve retornar 422 e deve retornar messagem de erro', async () => {
+        const response = await request(rota)
+            .post('/users/')
+            .send(jsonUsuario.json_arquivo_sem_conteudo);
+        expect(response.body);
+        expect(response.status).toBe(422);
+        //  expect(response.status).contains("E-mail já está em uso");
+        console.log(response.body);
+    });
+
+    it('Deve consultar um usuário cadastrado anteriormente, e logar o registro do usuário cadastrado com o retornado', async () => {
+        const response = await request(rota)
+            .get(`/users/${idUsuario}`);
+        expect(response.status).toBe(200);
+        console.log(response.body);
+        console.log(response.status);
     });
 });

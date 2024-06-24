@@ -1,7 +1,11 @@
-function teste1 (){
+function teste1() {
     console.log("Teste 1");
 }
 
-module.exports={
+function limparBaseUsuarios() {
+ 
+}
+
+module.exports = {
     teste1
 }

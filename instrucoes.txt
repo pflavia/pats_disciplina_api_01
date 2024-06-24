@@ -1,0 +1,29 @@
+Abrir o projeto no VSCode
+Abri um terminal na pasta raiz do projeto e executar o comando "npm install" também executar esse comando dentro da pasta "backend\"
+
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01> cd .\backend\
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01\backend> npm install
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01\backend> npm install --save-dev supertest supertest-session
+
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01\backend> npm install jest supertest
+
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01\backend> cd ..
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01> npm install               
+
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01> cd .\backend\
+
+-----------------------------------------------------
+Para rodar o projeto node app.js
+
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01\backend> node app.js
+
+
+--------------------------------------------------
+Para executar os testes  "npm run test"
+PS C:\Users\pflav\gitHub\pats_disciplina_api_01\primeiro-teste> npm run test
+
+
+---------------------------------------------------
+Instalar dependência para criar relatórios
+ npm install jest-stare          
+npm i jest-stare
