@@ -27,3 +27,8 @@ PS C:\Users\pflav\gitHub\pats_disciplina_api_01\primeiro-teste> npm run test
 Instalar dependência para criar relatórios
  npm install jest-stare          
 npm i jest-stare
+
+-------------------------------
+Instalar biblioteca para geração de dados randominicos]
+Instalar dentro do projeto de testes 
+npm i @faker-js/faker --save-dev
