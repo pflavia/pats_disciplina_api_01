@@ -1,0 +1,72 @@
+{
+  "bail": 0,
+  "changedFilesWithAncestor": false,
+  "ci": false,
+  "collectCoverage": false,
+  "collectCoverageFrom": [],
+  "coverageDirectory": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\coverage",
+  "coverageProvider": "babel",
+  "coverageReporters": [
+    "json",
+    "text",
+    "lcov",
+    "clover"
+  ],
+  "detectLeaks": false,
+  "detectOpenHandles": false,
+  "errorOnDeprecated": false,
+  "expand": false,
+  "findRelatedTests": false,
+  "forceExit": false,
+  "json": false,
+  "lastCommit": false,
+  "listTests": false,
+  "logHeapUsage": false,
+  "maxConcurrency": 5,
+  "maxWorkers": 7,
+  "noStackTrace": false,
+  "nonFlagArgs": [],
+  "notify": false,
+  "notifyMode": "failure-change",
+  "onlyChanged": false,
+  "onlyFailures": false,
+  "openHandlesTimeout": 1000,
+  "passWithNoTests": false,
+  "projects": [],
+  "reporters": [
+    [
+      "default",
+      {}
+    ],
+    [
+      "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\node_modules\\jest-stare\\lib\\index.js",
+      {
+        "resultDir": "results/jest-stare/",
+        "reportTitle": "jest-stare!",
+        "additionalResultsProcessors": [],
+        "coverageLink": "../../coverage/lcov-report/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json",
+        "resultHtml": "index.html",
+        "resultJson": "jest-results.json"
+      }
+    ]
+  ],
+  "rootDir": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste",
+  "runTestsByPath": false,
+  "seed": -864350819,
+  "skipFilter": false,
+  "snapshotFormat": {
+    "escapeString": false,
+    "printBasicPrototype": false
+  },
+  "testFailureExitCode": 1,
+  "testPathPattern": "",
+  "testSequencer": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\node_modules\\@jest\\test-sequencer\\build\\index.js",
+  "updateSnapshot": "new",
+  "useStderr": false,
+  "watch": false,
+  "watchAll": false,
+  "watchman": true,
+  "workerThreads": false
+}

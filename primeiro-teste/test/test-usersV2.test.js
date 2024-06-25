@@ -65,7 +65,7 @@ describe('', () => {
         //Incluir usuário que será deletado
         const responsePost = await request(rotaUsers)
             .post('/users')
-            .send(jsonUsuarioPayload.payloadUsuario);
+            .send(jsonUsuarioPayload.payloadUsuarioParaDeletar);
         expect(responsePost.statusCode).toBe(201);
         let idUsuario = responsePost.body.id;
         //Consultar o registro
@@ -85,7 +85,7 @@ describe('', () => {
         //Incluir usuário que será alterado
         const responsePost = await request(rotaUsers)
             .post('/users')
-            .send(jsonUsuarioPayload.payloadUsuario);
+            .send(jsonUsuarioPayload.payloadUsuarioParaAlterar);
         expect(responsePost.statusCode).toBe(201);
         const idUsuario = responsePost.body.id;
         //Consultar o registro
@@ -93,9 +93,9 @@ describe('', () => {
             .get(`/users/${idUsuario}`);
         expect(responseGet.statusCode).toBe(200);
         //validacao dos campos enviados x retornado 
-        expect(responseGet.body).toHaveProperty('nome', jsonUsuarioPayload.payloadUsuario.nome);
-        expect(responseGet.body).toHaveProperty('telefone', jsonUsuarioPayload.payloadUsuario.telefone);
-        expect(responseGet.body).toHaveProperty('email', jsonUsuarioPayload.payloadUsuario.email);
+        expect(responseGet.body).toHaveProperty('nome', jsonUsuarioPayload.payloadUsuarioParaAlterar.nome);
+        expect(responseGet.body).toHaveProperty('telefone', jsonUsuarioPayload.payloadUsuarioParaAlterar.telefone);
+        expect(responseGet.body).toHaveProperty('email', jsonUsuarioPayload.payloadUsuarioParaAlterar.email);
         //Alterar o registro
         const responsePut = await request(rotaUsers)
             .put(`/users/${idUsuario}`)
@@ -108,6 +108,6 @@ describe('', () => {
         expect(responseGet.body).toHaveProperty('nome', jsonUsuarioPayload.payloadUsuarioAlterado.nome);
         expect(responseGet.body).toHaveProperty('telefone', jsonUsuarioPayload.payloadUsuarioAlterado.telefone);
         //Não permite alterar o campo email
-        expect(responseGet.body).toHaveProperty('email', jsonUsuarioPayload.payloadUsuario.email);
+        expect(responseGet.body).toHaveProperty('email', jsonUsuarioPayload.payloadUsuarioParaAlterar.email);
     })
 })

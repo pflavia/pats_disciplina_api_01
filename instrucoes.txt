@@ -48,5 +48,5 @@ Instalar dentro do projeto de testes
 npm i @faker-js/faker --save-dev
 ----------------------------------
 Instalar a extenção Live Servere
-executar o projeto e ver se criou a pasta gollive
- 
+executar o projeto e ver se criou a pasta results
+ Cria uma opção para abrir o index.html direto no navegador GoLive

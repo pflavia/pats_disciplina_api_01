@@ -1,0 +1,300 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 2,
+  "numPassedTests": 14,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 2,
+  "numTotalTests": 14,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1719289448223,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1719289449886,
+        "runtime": 1252,
+        "slow": false,
+        "start": 1719289448634
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\test-users.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 104,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... beforeAll",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "beforeAll"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... Consulta todos os usuários... deve retornar status 200",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Consulta todos os usuários... deve retornar status 200"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... Consulta todos as atividades... deve retornar status 200",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Consulta todos as atividades... deve retornar status 200"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 12,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... Deve cadastrar um novo usuário e deve retornar status 201",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve cadastrar um novo usuário e deve retornar status 201"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... Tentativa de cadastrar um novo usuário com e-mail que já existe... de deve retornar messagem de erro",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Tentativa de cadastrar um novo usuário com e-mail que já existe... de deve retornar messagem de erro"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... Criação de usuário com dados inválidos, deve retornar 422 e deve retornar messagem de erro",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Criação de usuário com dados inválidos, deve retornar 422 e deve retornar messagem de erro"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes da api users..."
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes da api users... Deve consultar um usuário cadastrado anteriormente, e logar o registro do usuário cadastrado com o retornado",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Deve consultar um usuário cadastrado anteriormente, e logar o registro do usuário cadastrado com o retornado"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 7,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1719289453106,
+        "runtime": 4470,
+        "slow": false,
+        "start": 1719289448636
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\test-usersV2.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 53,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Cadastrondo um usuário, e consultando o retorno dos campos, se foram os enviados.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastrondo um usuário, e consultando o retorno dos campos, se foram os enviados."
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Cadastrondo um usuário sem senha verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastrondo um usuário sem senha verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Cadastrondo um usuário sem email verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastrondo um usuário sem email verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Cadastrondo um usuário sem telefone verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastrondo um usuário sem telefone verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Cadastrondo um usuário sem nome verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Cadastrondo um usuário sem nome verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 26,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Validar a deleção de um usuário.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Validar a deleção de um usuário."
+        },
+        {
+          "ancestorTitles": [
+            ""
+          ],
+          "duration": 27,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": " Validar a alteração de um usuário.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 10,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Validar a alteração de um usuário."
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

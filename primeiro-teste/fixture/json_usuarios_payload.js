@@ -10,7 +10,19 @@ const payloadUsuarioAlterado = {
     telefone: faker.phone.number('+55 (##) ####-####'),
     email: faker.internet.email(),
     senha: faker.internet.password()
-}
+};
+const payloadUsuarioParaDeletar = {
+    nome: faker.person.fullName(),
+    telefone: faker.phone.number('+55 (##) ####-####'),
+    email: faker.internet.email(),
+    senha: faker.internet.password()
+};
+const payloadUsuarioParaAlterar = {
+    nome: faker.person.fullName(),
+    telefone: faker.phone.number('+55 (##) ####-####'),
+    email: faker.internet.email(),
+    senha: faker.internet.password()
+};
 const payloadUsuarioSemSenha = {
     nome: faker.person.fullName(),
     telefone: faker.phone.number('+55 (##) ####-####'),
@@ -37,6 +49,8 @@ const payloadUsuarioSemTodos = {
 module.exports = {
     payloadUsuario,
     payloadUsuarioAlterado,
+    payloadUsuarioParaDeletar,
+    payloadUsuarioParaAlterar,
     payloadUsuarioSemSenha,
     payloadUsuarioSemEmail,
     payloadUsuarioSemTelefone,
