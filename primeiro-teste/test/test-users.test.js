@@ -1,8 +1,7 @@
 const request = require("supertest");
 const funcoesGenericas = require("../suporte/funcoes_genericas");
-const jsonUsuario = require("../fixture/json_usuarios");
-const json_arquivo_cadastro_usuario_dois = require("../fixture/json_usuarios");
-const json_arquivo_sem_conteudo = require("../fixture/json_usuarios");
+const 
+ = require("../fixture/json_usuarios");
 const { beforeEach } = require("node:test");
 const rota = "http://localhost:3000";
 const rotaUsers = "http://localhost:3000/users";

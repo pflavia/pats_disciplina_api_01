@@ -24,11 +24,29 @@ PS C:\Users\pflav\gitHub\pats_disciplina_api_01\primeiro-teste> npm run test
 
 
 ---------------------------------------------------
-Instalar dependência para criar relatórios
- npm install jest-stare          
-npm i jest-stare
+Instalar dependência para criar relatórios - Também instalar o Live Server para funcionar
+Instalar na raiz do projeto de testes 
+npm install jest-stare --save-dev
+colocar configuração no arquivo jest.config.js pode pegar na página de configuração do jest-stare
+
+
+  reporters: [
+    "default",
+    ["jest-stare",
+      {
+        resultDir: "results/jest-stare",
+        reportTitle: "jest-stare!",
+        additionalResultsProcessors: ["jest-junit"],
+        coverageLink: "../../coverage/lcov-report/index.html",
+        jestStareConfigJson: "jest-stare.json",
+        jestGlobalConfigJson: "globalStuff.json"
+      }]]
 
 -------------------------------
 Instalar biblioteca para geração de dados randominicos]
 Instalar dentro do projeto de testes 
 npm i @faker-js/faker --save-dev
+----------------------------------
+Instalar a extenção Live Servere
+executar o projeto e ver se criou a pasta gollive
+ 
