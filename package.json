@@ -2,9 +2,5 @@
   "dependencies": {
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^8.4.1",
-    "jest-stare": "^2.5.1"
   }
 }

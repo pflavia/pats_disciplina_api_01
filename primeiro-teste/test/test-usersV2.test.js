@@ -5,7 +5,7 @@ const jsonUsuarioPayload = require("../fixture/json_usuarios_payload");
 
 describe('', () => {
 
-    it('Cadastrondo um usuário, e consultando o retorno dos campos, se foram os enviados.', async () => {
+    beforeAll(async () => {
         const response = await request(rotaUsers)
             .post('/users')
             .send(jsonUsuarioPayload.payloadUsuario);
