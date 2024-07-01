@@ -25,7 +25,9 @@
   "maxConcurrency": 5,
   "maxWorkers": 7,
   "noStackTrace": false,
-  "nonFlagArgs": [],
+  "nonFlagArgs": [
+    "validacao.conteudo.test.js"
+  ],
   "notify": false,
   "notifyMode": "failure-change",
   "onlyChanged": false,
@@ -54,14 +56,14 @@
   ],
   "rootDir": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste",
   "runTestsByPath": false,
-  "seed": -1667630090,
+  "seed": -1058185491,
   "skipFilter": false,
   "snapshotFormat": {
     "escapeString": false,
     "printBasicPrototype": false
   },
   "testFailureExitCode": 1,
-  "testPathPattern": "",
+  "testPathPattern": "validacao.conteudo.test.js",
   "testSequencer": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\node_modules\\@jest\\test-sequencer\\build\\index.js",
   "updateSnapshot": "new",
   "useStderr": false,
