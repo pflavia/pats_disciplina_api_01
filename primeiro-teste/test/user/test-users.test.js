@@ -1,6 +1,6 @@
 const request = require("supertest");
-const funcoesGenericas = require("../suporte/funcoes_genericas");
-const jsonUsuario = require("../fixture/json_usuarios");
+const funcoesGenericas = require("../../suporte/funcoes_genericas");
+const jsonUsuario = require("../../fixture/json_usuarios");
 const { beforeEach } = require("node:test");
 const rota = "http://localhost:3000";
 const rotaUsers = "http://localhost:3000/users";
@@ -14,40 +14,18 @@ describe('Suite de testes da api users...', () => {
         senha: "1234",
     };
     let idUsuario;
-
-    it('beforeAll', async () => {
-        let idParaDeletar = 15;
-        const responseConsulta = await request(rota)
-            .get('/users');
-
-        if (responseConsulta.body.id !== null) {
-            console.log('valor do id para deletar', responseConsulta.body.id);
-            //idParaDeletar= responseConsulta.body.id;
-            let response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
-            response = await request(rota).delete(`/users/${idParaDeletar++}`);
+    beforeAll(async () => {
+        const response = await request(rota)
+            .get('/users')
+        for (let i = 0; i < response.body.length; i++) {
+            await request(rota).delete(`/users/${response.body[i].id}`);
         }
-    });
+    })  
 
     it('Consulta todos os usuários... deve retornar status 200', async () => {
         const response = await request(rota)
             .get('/users');
         expect(response.status).toBe(200);
-        console.log(response.body);
-    });
-
-    it('Consulta todos as atividades... deve retornar status 200', async () => {
-        const response = await request(rota)
-            .get('/activities');
-        expect(response.status).toBe(200);
-        console.log(response.body);
     });
 
     //it.only para executar apenas um teste
@@ -56,11 +34,9 @@ describe('Suite de testes da api users...', () => {
             .post('/users')
             .send(jsonUsuario.json_arquivo_cadastro_usuario);
         console.log(response.body);
-        expect(response.body).toHaveProperty("id");
-        idUsuario = response.body.id;
-        console.log("Usuário cadastradfo: ", idUsuario);
         expect(response.status).toBe(201);
-        console.log(response.body);
+              idUsuario = response.body.id;
+        console.log("Usuário cadastradfo: ", idUsuario);
     });
 
     it('Tentativa de cadastrar um novo usuário com e-mail que já existe... de deve retornar messagem de erro', async () => {

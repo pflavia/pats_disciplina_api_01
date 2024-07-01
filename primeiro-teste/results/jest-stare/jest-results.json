@@ -1,14 +1,14 @@
 {
-  "numFailedTestSuites": 1,
-  "numFailedTests": 2,
-  "numPassedTestSuites": 1,
-  "numPassedTests": 11,
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 4,
+  "numPassedTests": 29,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 2,
-  "numTotalTests": 13,
+  "numTotalTestSuites": 4,
+  "numTotalTests": 29,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,21 +26,21 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1719543007882,
+  "startTime": 1719806522002,
   "success": false,
   "testResults": [
     {
       "leaks": false,
-      "numFailingTests": 2,
+      "numFailingTests": 0,
       "numPassingTests": 5,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1719543009292,
-        "runtime": 994,
+        "end": 1719806523575,
+        "runtime": 1118,
         "slow": false,
-        "start": 1719543008298
+        "start": 1719806522457
       },
       "skipped": false,
       "snapshot": {
@@ -52,28 +52,13 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\test-users.test.js",
+      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\user\\test-users.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             "Suite de testes da api users..."
           ],
-          "duration": 123,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "Suite de testes da api users... beforeAll",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "retryReasons": [],
-          "status": "passed",
-          "title": "beforeAll"
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users..."
-          ],
-          "duration": 12,
+          "duration": 14,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": "Suite de testes da api users... Consulta todos os usuários... deve retornar status 200",
@@ -88,39 +73,15 @@
           "ancestorTitles": [
             "Suite de testes da api users..."
           ],
-          "duration": 5,
+          "duration": 30,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "Suite de testes da api users... Consulta todos as atividades... deve retornar status 200",
+          "fullName": "Suite de testes da api users... Deve cadastrar um novo usuário e deve retornar status 201",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
           "status": "passed",
-          "title": "Consulta todos as atividades... deve retornar status 200"
-        },
-        {
-          "ancestorTitles": [
-            "Suite de testes da api users..."
-          ],
-          "duration": 38,
-          "failureDetails": [
-            {
-              "matcherResult": {
-                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"error\": \"E-mail já está em uso\"}\u001b[39m",
-                "pass": false
-              }
-            }
-          ],
-          "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\nExpected path: \u001b[32m\"id\"\u001b[39m\nReceived path: \u001b[31m[]\u001b[39m\n\nReceived value: \u001b[31m{\"error\": \"E-mail já está em uso\"}\u001b[39m\n    at Object.toHaveProperty (C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\test-users.test.js:59:31)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
-          ],
-          "fullName": "Suite de testes da api users... Deve cadastrar um novo usuário e deve retornar status 201",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 0,
-          "retryReasons": [],
-          "status": "failed",
           "title": "Deve cadastrar um novo usuário e deve retornar status 201"
         },
         {
@@ -157,44 +118,32 @@
           "ancestorTitles": [
             "Suite de testes da api users..."
           ],
-          "duration": 9,
-          "failureDetails": [
-            {
-              "matcherResult": {
-                "actual": 404,
-                "expected": 200,
-                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
-                "name": "toBe",
-                "pass": false
-              }
-            }
-          ],
-          "failureMessages": [
-            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at Object.toBe (C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\test-users.test.js:90:33)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
-          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
           "fullName": "Suite de testes da api users... Deve consultar um usuário cadastrado anteriormente, e logar o registro do usuário cadastrado com o retornado",
           "invocations": 1,
           "location": null,
-          "numPassingAsserts": 0,
+          "numPassingAsserts": 1,
           "retryReasons": [],
-          "status": "failed",
+          "status": "passed",
           "title": "Deve consultar um usuário cadastrado anteriormente, e logar o registro do usuário cadastrado com o retornado"
         }
       ],
-      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api users... › Deve cadastrar um novo usuário e deve retornar status 201\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveProperty\u001b[2m(\u001b[22m\u001b[32mpath\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected path: \u001b[32m\"id\"\u001b[39m\n    Received path: \u001b[31m[]\u001b[39m\n\n    Received value: \u001b[31m{\"error\": \"E-mail já está em uso\"}\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 57 |\u001b[39m             \u001b[33m.\u001b[39msend(jsonUsuario\u001b[33m.\u001b[39mjson_arquivo_cadastro_usuario)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 58 |\u001b[39m         console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 59 |\u001b[39m         expect(response\u001b[33m.\u001b[39mbody)\u001b[33m.\u001b[39mtoHaveProperty(\u001b[32m\"id\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 60 |\u001b[39m         idUsuario \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39mid\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 61 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"Usuário cadastradfo: \"\u001b[39m\u001b[33m,\u001b[39m idUsuario)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 62 |\u001b[39m         expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m201\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toHaveProperty (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-users.test.js\u001b[39m\u001b[0m\u001b[2m:59:31)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSuite de testes da api users... › Deve consultar um usuário cadastrado anteriormente, e logar o registro do usuário cadastrado com o retornado\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m200\u001b[39m\n    Received: \u001b[31m404\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 88 |\u001b[39m         \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request(rota)\u001b[22m\n\u001b[2m     \u001b[90m 89 |\u001b[39m             \u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/users/${idUsuario}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 90 |\u001b[39m         expect(response\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 91 |\u001b[39m         console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mbody)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 92 |\u001b[39m         console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mstatus)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 93 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toBe (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtest/test-users.test.js\u001b[39m\u001b[0m\u001b[2m:90:33)\u001b[22m\u001b[2m\u001b[22m\n"
+      "failureMessage": null
     },
     {
       "leaks": false,
       "numFailingTests": 0,
-      "numPassingTests": 6,
+      "numPassingTests": 4,
       "numPendingTests": 0,
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1719543018801,
-        "runtime": 10511,
+        "end": 1719806528801,
+        "runtime": 6349,
         "slow": true,
-        "start": 1719543008290
+        "start": 1719806522452
       },
       "skipped": false,
       "snapshot": {
@@ -206,13 +155,101 @@
         "unmatched": 0,
         "updated": 0
       },
-      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\test-usersV2.test.js",
+      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\conteudo\\crud-conteudo.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete Conteudo)"
+          ],
+          "duration": 62,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes crud (post, get, put, delete Conteudo) Teste 01. Cadastrondo um conteúdo com sucesso e verificar statusCode de retorno.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 5,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 01. Cadastrondo um conteúdo com sucesso e verificar statusCode de retorno."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete Conteudo)"
+          ],
+          "duration": 17,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes crud (post, get, put, delete Conteudo) Teste 02. Consultar o conteúdo cadastrado com sucesso e verificar statusCode de retorno.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 02. Consultar o conteúdo cadastrado com sucesso e verificar statusCode de retorno."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete Conteudo)"
+          ],
+          "duration": 26,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes crud (post, get, put, delete Conteudo) Teste 03. Alterar o conteúdo de um item existente com sucesso e verificar statusCode de retorno.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 6,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 03. Alterar o conteúdo de um item existente com sucesso e verificar statusCode de retorno."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes crud (post, get, put, delete Conteudo)"
+          ],
+          "duration": 37,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes crud (post, get, put, delete Conteudo) Teste 04. Deletar o conteúdo de um item existente com sucesso e verificar statusCode de retorno.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 4,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 04. Deletar o conteúdo de um item existente com sucesso e verificar statusCode de retorno."
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1719806528872,
+        "runtime": 6431,
+        "slow": true,
+        "start": 1719806522441
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\user\\test-usersV2.test.js",
       "testResults": [
         {
           "ancestorTitles": [
             ""
           ],
-          "duration": 11,
+          "duration": 15,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": " Cadastrondo um usuário sem senha verificar mensagem de erro.",
@@ -227,7 +264,7 @@
           "ancestorTitles": [
             ""
           ],
-          "duration": 3,
+          "duration": 5,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": " Cadastrondo um usuário sem email verificar mensagem de erro.",
@@ -242,7 +279,7 @@
           "ancestorTitles": [
             ""
           ],
-          "duration": 3,
+          "duration": 5,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": " Cadastrondo um usuário sem telefone verificar mensagem de erro.",
@@ -257,7 +294,7 @@
           "ancestorTitles": [
             ""
           ],
-          "duration": 3,
+          "duration": 7,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": " Cadastrondo um usuário sem nome verificar mensagem de erro.",
@@ -272,7 +309,7 @@
           "ancestorTitles": [
             ""
           ],
-          "duration": 23,
+          "duration": 54,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": " Validar a deleção de um usuário.",
@@ -287,7 +324,7 @@
           "ancestorTitles": [
             ""
           ],
-          "duration": 27,
+          "duration": 68,
           "failureDetails": [],
           "failureMessages": [],
           "fullName": " Validar a alteração de um usuário.",
@@ -297,6 +334,244 @@
           "retryReasons": [],
           "status": "passed",
           "title": "Validar a alteração de um usuário."
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 14,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1719806528934,
+        "runtime": 6506,
+        "slow": true,
+        "start": 1719806522428
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\Users\\pflav\\gitHub\\pats_disciplina_api_01\\primeiro-teste\\test\\conteudo\\validacao-conteudo.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 58,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 05, Cadastro de um conteudo sem titulo verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 05, Cadastro de um conteudo sem titulo verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 06, Cadastro de um conteudo sem descricao verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 06, Cadastro de um conteudo sem descricao verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 07, Cadastro de um conteudo sem tipoConteudo verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 07, Cadastro de um conteudo sem tipoConteudo verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 08, Cadastro de um conteudo sem conteudo verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 08, Cadastro de um conteudo sem conteudo verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 09, Cadastro de um conteudo sem dados verificar mensagem de erro.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 09, Cadastro de um conteudo sem dados verificar mensagem de erro."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 52,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 10, Consulta sem resultado.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 10, Consulta sem resultado."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 17,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 11, Tentativa de consulta conteudo não existente.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 11, Tentativa de consulta conteudo não existente."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 16,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 12, Tentativa de deletar conteudo não existente.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 12, Tentativa de deletar conteudo não existente."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 43,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 13, Tentativa de alterar conteudo não existente.",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 13, Tentativa de alterar conteudo não existente."
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 23,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 14, Tentativa de alterar sem infomrar os campos obrigatórios",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 14, Tentativa de alterar sem infomrar os campos obrigatórios"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 13,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 15, Tentativa de alterar sem infomrar titulo",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 15, Tentativa de alterar sem infomrar titulo"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 9,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 16, Tentativa de alterar sem infomrar descricao",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 16, Tentativa de alterar sem infomrar descricao"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 8,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 17, Tentativa de alterar sem infomrar tipoConteudo",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 17, Tentativa de alterar sem infomrar tipoConteudo"
+        },
+        {
+          "ancestorTitles": [
+            "Suite de testes para validar campos obrigatório e mensagens de retorno)"
+          ],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Suite de testes para validar campos obrigatório e mensagens de retorno) Teste 18, Tentativa de alterar sem infomrar conteudo",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "Teste 18, Tentativa de alterar sem infomrar conteudo"
         }
       ],
       "failureMessage": null

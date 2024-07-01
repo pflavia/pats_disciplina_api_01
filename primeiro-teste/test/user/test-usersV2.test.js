@@ -1,7 +1,7 @@
 const request = require('supertest');
 const rotaUsers = 'http://localhost:3000';
 const { faker } = require('@faker-js/faker');
-const jsonUsuarioPayload = require("../fixture/json_usuarios_payload");
+const jsonUsuarioPayload = require("../../fixture/json_usuarios_payload");
 
 describe('', () => {
 
